@@ -8,8 +8,10 @@ async function bootstrap() {
   app.setGlobalPrefix("api");
 
   const config = new DocumentBuilder()
-    .setTitle("Aishat Blog")
-    .setDescription("The Aishat Blog API description")
+    .setTitle("NestJS Blog API")
+    .setDescription(
+      "A robust NestJS Blog API, with models such as: posts, comments and even users. \t Created by Tomilola Oluwafemi"
+    )
     .setVersion("0.1")
     .build();
 
