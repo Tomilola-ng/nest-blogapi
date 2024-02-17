@@ -9,7 +9,9 @@ import {
 } from "@nestjs/common";
 import { PostsService } from "./posts.service";
 import { Prisma } from "@prisma/client";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags("Posts")
 @Controller("posts")
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
