@@ -13,7 +13,7 @@ export class PostsService {
   }
 
   findAll() {
-    return this.databaseService.post.findMany();
+    return this.databaseService.post.findMany({ where: { published: true } });
   }
 
   findOne(id: number) {
